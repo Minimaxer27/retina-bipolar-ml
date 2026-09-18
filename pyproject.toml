@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "retina-bipolar-ml"
+version = "0.1.0"
+description = "Low-dimensional representations of mouse retinal bipolar cells with PCA"
+requires-python = ">=3.11"
+dependencies = [
+    "numpy>=2.0",
+    "scipy>=1.14",
+    "pandas>=2.2",
+    "scikit-learn>=1.5",
+    "h5py>=3.11",
+    "matplotlib>=3.9",
+]
+
+[project.optional-dependencies]
+notebook = ["jupyter>=1.1"]
+
+[tool.hatch.build.targets.wheel]
+bypass-selection = true

@@ -1,0 +1,13 @@
+# Data
+data/
+
+# Environment
+.venv/
+*.egg-info/
+__pycache__/
+
+# Notebook output
+figures/
+results.json
+.ipynb_checkpoints/
+*.pdf
